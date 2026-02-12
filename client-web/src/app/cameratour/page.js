@@ -243,6 +243,7 @@ export default function Home() {
             <Avatar text={text} closest={closest} locs={locs}
               fetchLoading={fetchLoading} setFetchLoading={setFetchLoading}
               cameraPermission={cameraPermission} setText={setText}
+              visPlace={visPlace} setVisPlace={setVisPlace}
             />
           </div>
         </div>
