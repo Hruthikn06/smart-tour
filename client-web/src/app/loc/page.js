@@ -1,33 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 
-const nearLoc = {
-	"stockTicker": {
-		lat: 13.0045213,
-		long: 77.544636,
-		acc: 13.65
-	},
-	"vendingMachine": {
-		lat: 13.0046345,
-		long: 77.5444103,
-		acc: 12.67
-	},
-	"mbaBridge": {
-		lat: 13.0048402,
-		long: 77.5442367,
-		acc: 2.5
-	},
-	"mbaAILab": {
-		lat: 13.0047431,
-		long: 77.5445032,
-		acc: 4.9
-	},
-	"mbaDigitalClassroom": {
-		lat: 13.0052077,
-		long: 77.5445211,
-		acc: 3.18
-	},
-};
+import { nearLoc } from '../helpers/loc';
 
 function getDistance(lat1, lon1, lat2, lon2) {
 	const toRad = angle => (angle * Math.PI) / 180;
@@ -95,7 +69,7 @@ function Home() {
 	}, []);
 
 	return (
-		<div style={{ padding: '1rem' }}>
+		<div style={{ padding: '1rem', color: "white" }}>
 			<h2>Live Location</h2>
 			<p>Update No: {updateNo}</p>
 			<p>{text1}</p>

@@ -15,6 +15,15 @@ const { ClerkCache } = require("./redis");
 dotenv.config();
 const GEMINI_KEY = process.env.GEMINI_KEY;
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
+// async function some() {
+//    const client = new ElevenLabsClient({
+//         apiKey: ELEVENLABS_API_KEY,
+//       });
+//   const voices = await client.voices.getAll();
+// console.log(voices);
+// }
+// some();
+// console.log(ELEVENLABS_API_KEY);
 
 async function createAudioFileFromText(text) {
 
@@ -23,7 +32,10 @@ async function createAudioFileFromText(text) {
       const client = new ElevenLabsClient({
         apiKey: ELEVENLABS_API_KEY,
       });
-      const audio = await client.textToSpeech.convert('ecp3DWciuUyW7BYM7II1', {
+      // console.log(text);
+      // ecp3DWciuUyW7BYM7II1 
+      // EXAVITQu4vr4xnSDxMaL
+      const audio = await client.textToSpeech.convert('EXAVITQu4vr4xnSDxMaL', {
         model_id: 'eleven_multilingual_v2',
         text,
         output_format: 'mp3_44100_128',

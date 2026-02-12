@@ -1,30 +1,17 @@
 const nearLoc = {
-  "stockTicker": {
-    lat: 13.0045213,
-    long: 77.544636,
-    acc: 13.65
-  },
-  "vendingMachine": {
-    lat: 13.0046345,
-    long: 77.5444103,
-    acc: 12.67
-  },
-  "mbaBridge": {
-    lat: 13.0048402,
-    long: 77.5442367,
-    acc: 2.5
-  },
-  "mbaAILab": {
-    lat: 13.0047431,
-    long: 77.5445032,
-    acc: 4.9
-  },
-  "mbaDigitalClassroom": {
-    lat: 13.0052077,
-    long: 77.5445211,
+  // "stockTicker": {
+  //   lat: 13.0045213,
+  //   long: 77.544636,
+  //   acc: 13.65
+  // },
+  "myHouse": {
+    lat: 12.316154,
+    long: 76.590303,
     acc: 3.18
   },
 };
+
+// Your location: (12.316746170821409, 76.59060897348277), Accuracy: ±96.0m
 
 const nearLocVisited = [
   {
