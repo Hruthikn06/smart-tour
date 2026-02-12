@@ -49,7 +49,7 @@ async function createAudioFileFromText(text) {
 
 function getLipSync(data) {
   try {
-    const res = spawnSync(`python`, ["convert.py", data], { encoding: "utf-8" });
+    const res = spawnSync(`./venv/Scripts/python.exe`, ["convert.py", data], { encoding: "utf-8" });
     if (res.error) {
       return null;
     }

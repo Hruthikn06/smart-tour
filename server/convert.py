@@ -1,12 +1,17 @@
 from g2p_en import G2p
-from pydub.utils import mediainfo
+from mutagen.mp3 import MP3
 import json
 import sys
 
+# print(sys.argv)
 python_dict = json.loads(sys.argv[1])
 text = python_dict["text"]
-info = mediainfo(f"./public/audio/{python_dict["fileCode"]}.mp3")
-duration = float(info['duration'])
+fileCode = python_dict["fileCode"]
+# text = "Hello I Am Deepiki your tour assistant"
+# fileCode = "welcome"
+audio = MP3(f"./public/audio/{fileCode}.mp3")
+duration = float(audio.info.length)
+# print(duration)
 
 # G2P conversion
 g2p = G2p()
