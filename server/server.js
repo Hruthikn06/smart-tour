@@ -97,7 +97,7 @@ async function getAiAns(text, closest, locs) {
     }
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
-      contents: `You are a AI Tour Guide, name is Deepiki. Answer user query in 2-3 sentences.
+      contents: `You are a AI Tour Guide, name is Navion. Answer user query in 2-3 sentences.
       You should also answer query based on user location. The user location is given to you in
       JSON format of this format {lat: number, long: number, acc: number}, 
       and we also give you near location of travel spots to you, in the same JSON format.

@@ -7,7 +7,7 @@ import sys
 python_dict = json.loads(sys.argv[1])
 text = python_dict["text"]
 fileCode = python_dict["fileCode"]
-# text = "Hello I Am Deepiki your tour assistant"
+# text = "Hello I Am Navion your tour assistant"
 # fileCode = "welcome"
 audio = MP3(f"./public/audio/{fileCode}.mp3")
 duration = float(audio.info.length)
