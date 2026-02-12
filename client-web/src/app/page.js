@@ -81,7 +81,7 @@ export default function Home() {
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Cube className="h-8 w-8 text-fuchsia-500" />
-              <span className="text-white font-bold text-xl">DEEPIKI</span>
+              <span className="text-white font-bold text-xl">NAVION</span>
             </div>
 
             <div className="md:hidden">
@@ -143,7 +143,7 @@ export default function Home() {
                 >
                   Enter the{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500">
-                    Deepiki
+                    Navion
                   </span>{" "}
                   of Digital Tour Guide
                 </motion.h1>
