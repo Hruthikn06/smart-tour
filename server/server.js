@@ -17,6 +17,7 @@ const GEMINI_KEY = process.env.GEMINI_KEY;
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 
 async function createAudioFileFromText(text) {
+
   return new Promise(async (resolve, reject) => {
     try {
       const client = new ElevenLabsClient({
@@ -86,7 +87,7 @@ async function getAiAns(text, closest, locs) {
       contextUser = locs[closest];
     }
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       contents: `You are a AI Tour Guide, name is Deepiki. Answer user query in 2-3 sentences.
       You should also answer query based on user location. The user location is given to you in
       JSON format of this format {lat: number, long: number, acc: number}, 
@@ -116,7 +117,7 @@ async function getAiAns(text, closest, locs) {
 const app = express();
 const PORT = 9000;
 // const CORS_ORIGIN = "http://localhost:3000";
-const CORS_ORIGIN = "https://travel-2-eight.vercel.app";
+const CORS_ORIGIN = "https://smart-tour-five.vercel.app";
 app.set("trust proxy", 1);
 app.use((_, res, next) => {
   res.setHeader("ngrok-skip-browser-warning", "true");
