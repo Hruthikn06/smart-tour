@@ -1,0 +1,7 @@
+/node_modules
+/deps
+/**/*/*.keras
+/.env
+/public/audio
+/public/lip-sync
+/memory

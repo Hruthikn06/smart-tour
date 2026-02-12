@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Manoja D",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "dependencies": {
+    "@google/genai": "^0.8.0",
+    "chalk": "^4.1.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "elevenlabs": "^1.56.1",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "redis": "^4.7.0",
+    "uuid": "^11.1.0"
+  }
+}
