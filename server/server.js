@@ -84,11 +84,8 @@ function convertMp3ToOgg(fileCode) {
 }
 
 const spotsDetails = {
-  "stockTicker": `Welcome to the Stock Ticker Display! This modern digital board showcases real-time stock market movements and economic indicators, giving you a taste of the financial world at a glance. It's a favorite spot for finance enthusiasts and curious minds alike.`,
-  "vendingMachine": `Feeling thirsty or need a quick snack? The vending machine is right here, fully stocked with goodies to keep you energized between classes or tours. It's a reliable pitstop for a quick refresh!`,
-  "mbaBridge": `This charming little bridge connects the main academic block with the MBA wing. As you walk across, take a moment to appreciate the blend of architectural design and the peaceful vibe of the campus.`,
-  "mbaAILab": `Welcome to the AI Lab—the innovation hub of the MBA block! This space is equipped with advanced computing tools and is where cutting-edge projects and machine learning ideas come to life.`,
-  "mbaDigitalClassroom": `Step into the Digital Classroom, a smart space built for interactive and hybrid learning. With high-tech projectors and collaborative tools, it's designed to deliver immersive educational experiences.`
+  // "stockTicker": `Welcome to the Stock Ticker Display! This modern digital board showcases real-time stock market movements and economic indicators, giving you a taste of the financial world at a glance. It's a favorite spot for finance enthusiasts and curious minds alike.`,
+  "myHouse": `Welcome to my house, have food and watch TV.`
 }
 
 async function getAiAns(text, closest, locs) {

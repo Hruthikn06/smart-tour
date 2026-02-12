@@ -5,68 +5,37 @@ const nearLoc = {
   //   acc: 13.65
   // },
   "myHouse": {
-    lat: 12.316154,
-    long: 76.590303,
-    acc: 3.18
+    lat: 12.31614107645473,
+    long: 76.59035304899268,
+    acc: 5.1
   },
 };
+
+// 12.31614107645473, 76.59035304899268), Accuracy: ±5.1
 
 // Your location: (12.316746170821409, 76.59060897348277), Accuracy: ±96.0m
 
 const nearLocVisited = [
-  {
+  // {
+  //   id: 1,
+  //   name: "Stock Ticker",
+  //   spotId: "stockTicker",
+  //   date: "Upcoming",
+  //   duration: "1 days",
+  //   highlights: ["Stock Market", "Finances", "Real time update"],
+  //   rating: 4.8,
+  //   photos: 127,
+  //   visited: false,
+  // },
+   {
     id: 1,
-    name: "Stock Ticker",
-    spotId: "stockTicker",
+    name: "My House",
+    spotId: "myHouse",
     date: "Upcoming",
     duration: "1 days",
     highlights: ["Stock Market", "Finances", "Real time update"],
     rating: 4.8,
     photos: 127,
-    visited: false,
-  },
-  {
-    id: 2,
-    name: "Vending Machine",
-    spotId: "vendingMachine",
-    date: "Upcoming",
-    duration: "1 days",
-    highlights: ["Great foods", "Cool drinks", "Next gen technology"],
-    rating: 4.8,
-    photos: 127,
-    visited: false,
-  },
-  {
-    id: 3,
-    name: "MBA Bridge",
-    spotId: "mbaBridge",
-    date: "Upcoming",
-    duration: "2 days",
-    highlights: ["The twin tower", "Bridge connects two buildings"],
-    rating: 5.0,
-    photos: 211,
-    visited: false,
-  },
-  {
-    id: 4,
-    name: "MBA AI Lab",
-    spotId: "mbaAILab",
-    date: "Upcoming",
-    duration: "5 days",
-    highlights: ["GPUs warehouse", "ML Models"],
-    rating: null,
-    photos: 0,
-    visited: false,
-  },
-  {
-    id: 5,
-    name: "MBA Digital Classroom",
-    spotId: "mbaDigitalClassroom",
-    date: "Upcoming",
-    duration: "8 days",
-    highlights: ["Smart Board", "AI teacher", "Good infra"],
-    rating: null,
-    photos: 0,
     visited: false,
   },
 ];
